@@ -4,22 +4,24 @@ html {
 }
 
 header {
-    background: url('flames.gif') repeat;
+    background: url('./pictures/flames.gif') repeat;
     
-    color: #ffe816a8;
+    color: #ffffffe6;
     background-size: cover;
     text-align: center;
 }
 
 main {
-    background: url('vader.gif') repeat;
+    
     color: #ffffff;
     background-size: cover;
-    text-align: center;
+    text-align: left;
 }
 
+
+
 footer {
-    background: url('flames.gif') repeat;
+    background: rgb(159, 18, 18);
     color: #ffe816a8;
     background-size: cover;
     text-align: center;
