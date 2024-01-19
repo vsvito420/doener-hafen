@@ -1,5 +1,6 @@
 # Projektantrag
 - Döner Hafen _digitalisieren_
+- ich bitte euch auch ein github account zu machen das ich euch hinzufügen kann und wir somit zusammen daran arbeiten können. ich empfehle github desktop herunterzuladen
 ### Plan
 - maulhard und funke überzeugen das vitos idee zu komplex ist und warscheinlich nicht in der zeit erreichbar ist.
 - Erklären wieso wir wechseln wollen zu einem projekt das ein ziel in sicht hat, wie dieses hier.
