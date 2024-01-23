@@ -19,7 +19,18 @@ main {
     text-align: left;
 }
 
+.speisekarte img {
+width: px;
+height: px;
+}	
 
+@media screen and (max-width: 600px) {
+    .speisekarte img {
+        width: 100%;
+        height: auto;
+    }
+    
+}
 
 footer {
     background: rgb(159, 18, 18);

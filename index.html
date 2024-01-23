@@ -1,11 +1,11 @@
 <!DOCTYPE html lang="de">
 <head>
-    <title>Döner Hafen</title>
+    <title>2Döner Hafen</title>
     <link rel="stylesheet" href="style.css">
     
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="Döner Hafen in Friedrichshafen">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- für mobile geräte -->
+    <meta description="Döner Hafen in Friedrichshafen"> <!-- beschreibung für suchmaschinen -->
     <title>
         Döner Hafen
     </title>
@@ -40,11 +40,11 @@
                     </th>
                     <td>
                         Döner
-                        <img src="./pictures/food/doener.jpg" alt="Döner" style="width: 100%;">
+                        <img src="./pictures/food/doener.jpg" alt="Döner" style="width: 100px;">
                     </td>
                     <td>
                         Dürüm (Yufka)
-                        <img src="./pictures/food/dueruem.jpg" alt="Dürüm" style="width: 100%;">
+                        <img src="./pictures/food/dueruem.jpg" alt="Dürüm" style="width: 100px;">
                     </td>
                     <td>
                         Lachmachun
@@ -68,7 +68,12 @@
         <script>
             map = new OpenLayers.Map("demoMap");
             map.addLayer(new OpenLayers.Layer.OSM());
-            map.zoomToMaxExtent();
+            var lonLat = new OpenLayers.LonLat(9.492058416805786, 47.672435787414166).transform(
+                new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+                map.getProjectionObject() // to Spherical Mercator Projection
+            );
+            var zoom = 18;
+            map.setCenter(lonLat, zoom);
         </script>
     </main>
 
